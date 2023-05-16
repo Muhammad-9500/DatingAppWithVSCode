@@ -26,7 +26,7 @@ namespace DatingApp.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUsers(int id)
         {
-           return await _context.User.FindAsync(id);
+             return await _context.User.FindAsync(id);
         }
     }
 }
